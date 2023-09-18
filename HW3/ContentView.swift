@@ -69,7 +69,7 @@ struct HomeView: View {
                 // Call the function using an async task
                 showingAlert = true
             }
-            .alert("Reset Settings", isPresented: $showingAlert){
+            .alert("Refresh Quote", isPresented: $showingAlert){
                 Button("Confirm", role: .none){
                     Task {
                         let newQuote = await getRandomQuote()
